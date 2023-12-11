@@ -7,7 +7,7 @@ class Tecnologias(models.Model):
         return self.tecnologia
 
 class Empresa(models.Model):
-    choices_nincho_mercado = (
+    choices_nicho_mercado = (
         ('M', 'Marketing'),
         ('N', 'Nutrição'),
         ('D', 'Design'),
@@ -21,7 +21,7 @@ class Empresa(models.Model):
     tecnologias = models.ManyToManyField(Tecnologias)
     endereco = models.CharField(max_length=30)
     caracteristica_empresa = models.TextField()
-    nicho_mercado = models.CharField(max_length=5, choices=choices_nincho_mercado)
+    nicho_mercado = models.CharField(max_length=5, choices=choices_nicho_mercado)
 
     def __str__(self):
         return self.nome
