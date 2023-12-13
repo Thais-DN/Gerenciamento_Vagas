@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load static %}
+{% block 'head' %}
+
+    <link rel="stylesheet" href="{% static 'empresa/css/home.css' %}">
+
+{% endblock%}
+
+{% block 'body' %}
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'nova_empresa' %}">Cadastrar Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'empresas' %}">Consultar Empresa</a>
+            </li>
+          </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container d-flex justify-content-center mt-4" style="height: 100vh;">
+    <div class="row">
+      <div class="col-12 scrollspy-example">
+        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+            <a class="navbar-brand">Informações</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link " href="#scrollspyHeading1">Criação do projeto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Usuabilidade</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">outros..</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#scrollspyHeading3">Ficha Técnica</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading4">Lorem</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading5">Lorem</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example p-4" tabindex="0">
+            <h4 id="scrollspyHeading1">Sobre a criação do projeto</h4>
+            <p class="mx-3">Esse projeto foi criado pelo Caio dono do canal do Youtube 'Pythonando'. Um curso da PYLAB acompanhado por mim, no qual tambem foram feitas modificações com objetivo de melhorias para o projeto e desenvolver maiores conhecimentos da minha parte.</p>
+            <h4 id="scrollspyHeading2">Qual a utilidade?</h4>
+            </h4>
+                <p class="mx-3">
+                    - O aplicativo de gerenciamento de vagas de trabalho oferece um ambiente completo para organizar e acompanhar oportunidades profissionais de maneira eficiente e estruturada.
+                    <br>
+                    - Por meio desta plataforma, é possível cadastrar e remover empresas, proporcionando uma gestão simplificada do banco de dados. Além disso, a funcionalidade de listagem de empresas e o filtro por empresa facilitam a localização e visualização das vagas de forma direcionada.
+                    <br>
+                    - Destaca-se a capacidade de acessar informações detalhadas de cada empresa, bem como a adição e exclusão de vagas associadas a elas. Essa abordagem centralizada possibilita um controle minucioso das oportunidades disponíveis.
+                    <br>
+                    - No contexto de cada vaga, há a possibilidade de acompanhar o progresso por meio da definição de tarefas com níveis de prioridade distintos. Esse recurso permite uma visão clara das atividades concluídas e daquelas pendentes.
+                    <br>
+                    - O sistema facilita a interação com as empresas ao possibilitar o envio de e-mails diretamente pela plataforma. Além disso, mantém um registro histórico das comunicações efetuadas, oferecendo um panorama completo das interações realizadas.
+                    <br>
+                    - Uma característica essencial é a análise das tecnologias exigidas pelas vagas em relação às suas habilidades atuais. Essa funcionalidade destaca as competências dominadas e identifica as áreas que necessitam de aprimoramento, oferecendo uma direção clara para o desenvolvimento profissional.
+                    <br>
+                    - Em síntese, o aplicativo proporciona um ambiente robusto para gerenciar e acompanhar oportunidades de trabalho, oferecendo uma experiência organizada e eficaz na busca por crescimento e progresso profissional.</p>
+            <h4 id="scrollspyHeading3">Habilidades</h4>
+                <p class="mx-3">
+                    <strong>Cadastro e Deleção de Empresas:</strong> Permite adicionar novas empresas ao sistema ou remover empresas existentes quando necessário.
+                    <br>
+                    <strong>Listagem de Empresas:</strong> Apresenta uma lista das empresas cadastradas para fácil referência.
+                    Filtro por Empresa: Oferece a capacidade de filtrar as vagas por empresa para uma visualização mais específica.
+                    Gerenciamento de Empresas:
+                    <br>
+                    <strong>Acesso Individual à Empresa:</strong> Permite acessar informações detalhadas sobre uma empresa específica.
+                    Cadastro e Deleção de Vagas: Permite adicionar ou remover vagas associadas a cada empresa.
+                    Acesso Individual às Vagas: Oferece acesso detalhado a cada vaga, incluindo informações específicas sobre ela.
+                    Controle de Progresso na Vaga:
+                    <br>
+                    <strong>Definição de Tarefas Prioritárias:</strong> Permite criar e gerenciar tarefas específicas para cada vaga, com diferentes níveis de prioridade.
+                    Acompanhamento do Progresso: Oferece uma visão geral do seu progresso dentro de cada vaga com base nas tarefas concluídas.
+                    Interação com Empresas:
+                    <br>
+                    <strong>Envio de E-mails para Empresas:</strong> Envia e-mails para as empresas com informações relevantes sobre as vagas salvas no sistema.
+                    Histórico de E-mails Enviados: Mostra um registro dos e-mails enviados, facilitando o acompanhamento das interações.
+                    Gestão de Habilidades e Tecnologias:
+                    <br>
+                    <strong>Lista de Tecnologias Dominadas:</strong> Apresenta uma lista das tecnologias que você domina.
+                    <br>
+                    <strong>Tecnologias a Estudar:</strong> Identifica as tecnologias necessárias para as vagas cadastradas, auxiliando na definição de áreas para estudo e aprimoramento.
+                    Esse projeto oferece um ambiente completo para gerenciar oportunidades de trabalho, desde o registro das empresas e vagas até o acompanhamento do progresso e interações com as empresas. Além disso, a funcionalidade de mapear suas habilidades em relação às exigências das vagas é um recurso valioso para o seu desenvolvimento profissional.</p>
+            <h4 id="scrollspyHeading4">Lorem</h4>
+                <p class="mx-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe ab eligendi quo voluptatibus et illum, pariatur aliquid rerum aperiam autem nemo odio minima ex necessitatibus! Adipisci mollitia qui aliquid?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero est laborum laudantium eos consectetur dolores rem obcaecati, vel aliquid reiciendis labore doloribus laboriosam asperiores sequi dolorem numquam! Labore, numquam!</p>
+            <h4 id="scrollspyHeading5">Lorem</h4>
+                <p class="mx-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat saepe ab eligendi quo voluptatibus et illum, pariatur aliquid rerum aperiam autem nemo odio minima ex necessitatibus! Adipisci mollitia qui aliquid?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero est laborum laudantium eos consectetur dolores rem obcaecati, vel aliquid reiciendis labore doloribus laboriosam asperiores sequi dolorem numquam! Labore, numquam!</p>
+          </div>
+      </div>
+
+{% endblock%}

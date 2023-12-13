@@ -15,6 +15,24 @@
 
 .header{
     border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-ver-empresas{
+    float: right;
+    text-decoration: none;
+    color: #7D2948;
+    padding: 5px;
+    border: 1px solid #7D2948;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-ver-empresas:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #7D2948;
 }
 
 .titulo{

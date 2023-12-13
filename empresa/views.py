@@ -5,6 +5,9 @@ from django.shortcuts import redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.messages import constants
 
+def home(request):
+    return render(request, 'home.html')
+
 def nova_empresa(request):
     if request.method == "GET":
         techs = Tecnologias.objects.all()
