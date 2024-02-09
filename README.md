@@ -10,7 +10,7 @@ Este projeto foi inicialmente criado por Caio, dono do canal do Youtube 'Pythona
 - **Interação com Empresas**: Envio de e-mails e registro de histórico de comunicações com empresas.
 - **Gestão de Habilidades e Tecnologias**: Análise das tecnologias exigidas pelas vagas e comparação com as habilidades atuais.
 
-![Formulário para cadastrar empresa]([https://exemplo.com/imagem1.jpg](https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/Form-NovaEmpresa.png))
-![Empresas cadastradas]([https://exemplo.com/imagem2.jpg](https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/GerenciarEmpresas.png))
-![Perfil da empresa]([https://exemplo.com/imagem3.jpg](https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/PerfilEmpresa.png)https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/PerfilEmpresa.png)
+![Formulário para cadastrar empresa](https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/Form-NovaEmpresa.png)
+![Empresas cadastradas](https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/GerenciarEmpresas.png)
+![Perfil da empresa](https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/PerfilEmpresa.png)
 ![Controle de vagas](https://github.com/Thais-DN/Gerenciamento_Vagas/blob/master/media/ControlVaga.png)
